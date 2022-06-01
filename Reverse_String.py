@@ -1,2 +1,3 @@
 x=input()
-print(x[::-1])
+y=x.split()[::-1]
+print(*y)
