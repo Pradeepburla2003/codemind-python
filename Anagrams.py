@@ -1,6 +1,10 @@
 x=input()
 y=input()
-if(sorted(x.lower())==sorted(y.lower())):
+c=0
+for i in x.lower():
+    if i in y.lower():
+        c+=1
+if(c==len(x)):
     print('True')
 else:
     print('False')
