@@ -1,5 +1,4 @@
 x=input()
-a=x.split()
-d=len(a)
-b=a[d-1]
-print(b[0])
+x=x.split()
+a=x[len(x)-1]
+print(a[0])
