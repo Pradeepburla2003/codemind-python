@@ -1,3 +1,5 @@
-x=input()
-for i in x.split():
-    print(len(i),end=" ")
+x=input().split()
+a=[]
+for i in x:
+    a.append(len(i))
+print(*a)
