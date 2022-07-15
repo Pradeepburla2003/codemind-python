@@ -1,9 +1,5 @@
-x=input()
-c=0
-for i in x.split():
-    c=len(i)
-    break
-for i in x.split():
-    if(c>len(i)):
-        c=len(i)
-print(c)
+x=input().split()
+a=[]
+for i in x:
+    a.append(len(i))
+print(min(a))
