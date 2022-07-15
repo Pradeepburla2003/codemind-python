@@ -1,12 +1,12 @@
 x=input()
-y=input()
-j=0
-for i in range(len(x)):
-    if x[i]==y:
-        print("True")
-        print(i)
-        j=1
+ch=input()
+n,d=0,0
+for i in x:
+    if(ch==i):
+        print('True')
+        print(d)
+        n=1
         break
-if(j==0):
-    print("False")
-        
+    d+=1
+if(n==0):
+    print('False')
