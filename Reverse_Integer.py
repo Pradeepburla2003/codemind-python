@@ -1,0 +1,15 @@
+n=int(input())
+s=0
+if(n<0):
+    n=-n
+    while(n>0):
+        r=n%10
+        s=r+s*10
+        n=n//10
+    print(-s)
+else:
+    while(n>0):
+        r=n%10
+        s=r+s*10
+        n=n//10
+    print(s)
