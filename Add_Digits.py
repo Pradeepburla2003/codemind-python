@@ -1,0 +1,15 @@
+a=int(input())
+while(1):
+    i=a
+    c=0
+    m=0
+    while(i>0):
+        c+=1
+        r=i%10
+        m=m+r
+        i=i//10
+    if(c==1):
+        print(m)
+        break
+    else:
+        a=m
