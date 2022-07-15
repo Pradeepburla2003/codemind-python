@@ -1,12 +1,12 @@
 s1=input().lower()
 s2=input().lower()
-d=[]
+a=[]
 for i in s1:
-    if(i!=' ' and i not in s2):
-        d.append(i)
+    if i not in s2 and i!=' ':
+        a.append(i)
 for i in s2:
-    if(i!=' ' and i not in s1):
-        d.append(i)
-d=sorted(set(d))
-for i in d:
+    if i not in s1 and i!=' ':
+        a.append(i)
+a=sorted(set(a))
+for i in a:
     print(i,end="")
