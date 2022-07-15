@@ -1,8 +1,8 @@
 x=input().lower()
 a=[]
-for i in  x:
-    if(x.count(i)==1 and i!=' '):
+for i in x:
+    if(i!=' '):
         a.append(i)
-a=sorted(a)
+a=sorted(set(a))
 for i in a:
     print(i,end="")
