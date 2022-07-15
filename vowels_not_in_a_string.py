@@ -1,8 +1,8 @@
-x=input()
-ch2="aeiou"
+a=input()
+ch='aeiou'
 d=0
-for i in ch2:
-    if i not in x:
+for i in ch:
+    if i not in a:
         print(i,end=" ")
         d=1
 if(d==0):
