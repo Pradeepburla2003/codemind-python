@@ -1,8 +1,6 @@
-x=input().lower().replace(' ','')
+x=input().lower()
 a=[]
-c=0
-for i in x:
-    if(x.count(i)==1):
+for i in  x:
+    if(x.count(i)==1 and i!=' '):
         a.append(i)
-a=sorted(a)
 print(len(a))
