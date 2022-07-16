@@ -1,8 +1,7 @@
-x=input()
-y=input()
-c=0
-for i in x.split():
-    for j in y.split():
-        if(i.lower()==j.lower()):
-            c+=1
-print(c)
+x=input().lower().split()
+y=input().lower().split()
+a=[]
+for i in x:
+    if i in y:
+        a.append(i)
+print(len(a))
