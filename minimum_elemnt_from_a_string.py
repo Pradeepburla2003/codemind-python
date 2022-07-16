@@ -1,7 +1,7 @@
 x=input().split()
-a=min(x[len(x)-1])
-b=chr(ord(a)+32)
-if b not in x[len(x)-1]:
-    print(a)
+c=min(x[len(x)-1])
+c1=chr(ord(c)+32)
+if c1 in x[len(x)-1]:
+    print(c1)
 else:
-    print(b)
+    print(c)
