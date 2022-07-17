@@ -1,12 +1,13 @@
 a=input()
 b=[]
+c=[]
 for i in a:
-    if(i.isalpha() or i.isdigit()):
+    if i.isalnum():
         b.append(i)
 b=sorted(b)
 j=0
 for i in a:
-    if(i.isdigit() or i.isalpha()):
+    if i.isalnum():
         print(b[j],end="")
         j+=1
     else:
