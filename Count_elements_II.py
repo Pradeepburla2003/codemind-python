@@ -1,13 +1,11 @@
-m,n=map(int,input().split())
-a=list(map(int,input().split()))
-b=list(map(int,input().split()))
-a=list(set(a))
-b=list(set(b))
-c=0
-for i in a:
-    if i not in b:
-        c+=1
-for i in b:
-    if i not in a:
-        c+=1
-print(c)
+a,b=map(int,input().split())
+c=list(map(int,input().split()))
+d=list(map(int,input().split()))
+f=[]
+for i in c:
+    if i not in d and i not in f:
+        f.append(i)
+for i in d:
+    if i not in c and i not in f:
+        f.append(i)
+print(len(f))
