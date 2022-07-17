@@ -1,11 +1,13 @@
-x=input().lower().split()
-ch='aeuio'
-a=[]
+x=input().split()
+ch='aeuioAEUIO'
+c=0
+d=[]
 for i in x:
     j=str(i)
     c=0
     for k in j:
-        if(k in ch):
+        if k in ch:
             c+=1
-    a.append(c)
-print(a.count(min(a)))
+    d.append(c)
+g=min(d)
+print(d.count(g))
