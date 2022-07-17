@@ -1,16 +1,19 @@
 x=input().split()
+a=[]
 for i in x:
-    a=[]
     j=str(i)
+    c=[]
+    d=''
     for k in j:
-        if(k.isdigit() or k.isalpha()):
-            a.append(k)
-    a=sorted(a)
+        if(k.isalnum()):
+            c.append(k)
+    c=sorted(c)
     m=0
     for k in j:
-        if(k.isdigit() or k.isalpha()):
-            print(a[m],end="")
+        if(k.isalnum()):
+            d+=c[m]
             m+=1
         else:
-            print(k,end="")
-    print(' ',end="")
+            d+=k
+    a.append(d)
+print(*a)
