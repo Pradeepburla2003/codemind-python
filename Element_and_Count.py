@@ -1,9 +1,10 @@
-n=int(input())
+x=int(input())
 a=list(map(int,input().split()))
 b=[]
+c=[]
 for i in a:
-    if(i not in b):
+    if i not in b:
         b.append(i)
-for i in b:
-    print(i,end=" ")
-    print(a.count(i),end=" ")
+        c.append(a.count(i))
+for i in range(len(b)):
+    print(b[i],c[i],end=" ")
