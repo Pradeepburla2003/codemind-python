@@ -1,17 +1,20 @@
 x=input().split()
-ch='aeuioAUIOE'
+a=[]
+ch='aeuioAEUIO'
 for i in x:
-    a=[]
     j=str(i)
+    c=[]
+    d=''
     for k in j:
         if k not in ch:
-            a.append(k)
-    a=sorted(a)
+            c.append(k)
+    c=sorted(c)
     m=0
     for k in j:
-        if k not in ch:
-            print(a[m],end="")
+        if(k not in ch):
+            d+=c[m]
             m+=1
         else:
-            print(k,end="")
-    print(' ',end="")
+            d+=k
+    a.append(d)
+print(*a)
