@@ -1,12 +1,11 @@
-x,y=map(int,input().split())
+m,n=map(int,input().split())
 a=list(map(int,input().split()))
 c=0
 for i in a:
     j=str(i)
-    m=[]
-    for k in j:
-        if(k.isdigit()):
-            m.append(k)
-    if(len(m)==y):
+    if(j[0]=='-'):
+        if(n==len(j)-1):
+            c+=1
+    elif(n==len(j)):
         c+=1
 print(c)
