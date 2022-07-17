@@ -1,11 +1,11 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=[]
+d=[]
 for i in a:
-    j=len(str(i))
-    b.append(j)
-m=max(b)
+    j=str(i)
+    d.append(len(j))
+s=max(d)
 for i in a:
-    j=len(str(i))
-    if(j==m):
+    j=str(i)
+    if(s==len(j)):
         print(i,end=" ")
