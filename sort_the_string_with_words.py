@@ -1,2 +1,2 @@
-x=input().split()
-print(*sorted(x))
+a=input().split()
+print(*sorted(a))
