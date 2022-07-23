@@ -1,0 +1,20 @@
+n=int(input())
+a,b=0,1
+m1,m2=0,0
+while(1):
+    c=a+b
+    a=b
+    b=c
+    if(c<n):
+        m1=c
+    elif(c>n):
+        m2=c
+        break
+r1=n-m1
+r2=m2-n
+if(r1==r2):
+    print(m1,m2)
+elif(r1<r2):
+    print(m1)
+else:
+    print(m2)
