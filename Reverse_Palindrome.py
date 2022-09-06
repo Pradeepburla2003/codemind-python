@@ -1,0 +1,12 @@
+n=int(input())
+while(1):
+    s=0
+    j=str(n)
+    j=j[::-1]
+    j=int(j)
+    num=n+j
+    num=str(num)
+    if(num==num[::-1]):
+        print(num)
+        break
+    n=int(num)
