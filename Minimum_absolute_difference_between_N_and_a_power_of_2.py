@@ -1,0 +1,12 @@
+n=int(input())
+k=0
+a=0
+while(k<=n):
+    k=pow(2,a)
+    a=a+1
+s1=k-n
+s2=n-pow(2,a-2)
+if(s1<s2):
+    print(s1)
+else:
+    print(s2)
