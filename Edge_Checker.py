@@ -1,9 +1,5 @@
-x,y=map(int,input().split())
-if x==y+1 or y==x+1:
-    print('Yes')
-elif x==1 and y==10:
-    print('Yes')
-elif y==1 and x==10:
+a,b=map(int,input().split())
+if(abs(a-b)==1 or (a==1 and b==10) or (a==10 and b==1)):
     print('Yes')
 else:
     print('No')
